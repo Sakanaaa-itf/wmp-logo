@@ -1,2 +1,1 @@
-# wmp-logo
-wmp-logo
+# marp-templete for wmp lab.
