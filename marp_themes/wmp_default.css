@@ -52,7 +52,7 @@ section.title > footer {
 section.slides > header {
   position: absolute;
   inset: 0 0 auto 0;
-  height: 100px;
+  height: 80px;
   background: #000;
   color: #FDFAF0;
   display: flex;
