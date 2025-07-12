@@ -21,7 +21,7 @@ section.title {
   background: #000;
   color: #fdfaf0;
   text-align: center;
-  padding: 250px 20px 0;
+  padding: 230px 20px 0;
 }
 section.title::before {
   content: attr(data-date) "\A 論文紹介";
@@ -82,21 +82,27 @@ section.slides::before {
 /* ---------- headings ---------- */
 h1 {
   font-size: 48px;
+  margin: 0;
 }
 h2 {
   font-size: 40px;
+  margin: 0;
 }
 h3 {
   font-size: 32px;
+  margin: 0;
 }
 h4 {
   font-size: 28px;
+  margin: 0;
 }
 h5 {
   font-size: 24px;
+  margin: 0;
 }
 h6 {
   font-size: 20px;
+  margin: 0;
 }
 
 /* ---------- lists ---------- */
@@ -114,7 +120,7 @@ li {
 }
 
 /* ---------- blockquote ---------- */
-blockquote {
+section > blockquote:not(:has(blockquote)) {
   margin: 38px 0;
   padding: 4px 32px;
   border-left: 8px solid #6600cc;
@@ -175,7 +181,7 @@ img {
 /* ---------- horizontal rule ---------- */
 hr {
   border: none;
-  border-top: 4px solid #6600cc;
+  border-top: 4px solid #aaaaaa;
   margin: 1.5em 0;
 }
 
@@ -200,4 +206,31 @@ footer::after {
   background: url("https://github.com/Sakanaaa-itf/wmp-logo/blob/main/wmp_logo.png?raw=true")
     no-repeat center/contain;
   pointer-events: none;
+}
+
+/* ---------- footnotes ---------- */
+section blockquote blockquote blockquote {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.2em 0 0;
+  border: 0;
+  border-top: 2px dashed #555;
+  background: transparent;
+  color: #000;
+
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  right: 70px;
+  line-height: 1.2;
+}
+sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  line-height: 0;
+}
+section blockquote:empty,
+section blockquote > blockquote:empty {
+  display: none;
 }
