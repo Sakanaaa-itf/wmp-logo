@@ -5,7 +5,7 @@
 section {
   font-family: "Arial", "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 32px;
-  line-height: 1.25;
+  line-height: 1.2;
   background: #fdfaf0;
   color: #000;
 }
@@ -108,15 +108,18 @@ h6 {
 /* ---------- lists ---------- */
 ul,
 ol {
-  margin: 0.6em 0 0.6em 1.2em;
+  margin: 0.4em 0 0.4em 1.2em;
   padding: 0;
+}
+li {
+  margin: 0.2em 0;
 }
 ul ul,
 ol ol {
-  margin-left: 1.2em;
+  margin: 0.2em 0 0.2em 1.2em;
 }
-li {
-  margin: 0.3em 0;
+section.slides ol > li {
+  margin: 0.5em 0 !important;
 }
 
 /* ---------- blockquote ---------- */
@@ -220,9 +223,9 @@ section blockquote blockquote blockquote {
   color: #000;
 
   position: absolute;
-  bottom: 70px;
+  bottom: 0;
   left: 70px;
-  right: 70px;
+  right: 170px;
   line-height: 1.2;
 }
 sup {
@@ -233,4 +236,18 @@ sup {
 section blockquote:empty,
 section blockquote > blockquote:empty {
   display: none;
+}
+
+section table,
+section table th,
+section table td {
+  font-size: 24px;
+}
+
+section img {
+  display: block;
+  margin: 1em auto;
+  max-width: 1200px;
+  max-height: 500px;
+  object-fit: contain;
 }

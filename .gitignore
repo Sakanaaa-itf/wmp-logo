@@ -1,1 +1,5 @@
 slides
+.vscode
+.eslintrc.json
+.eslintignore
+images
